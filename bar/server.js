@@ -3,7 +3,7 @@ var app = express();
 
 console.log(__dirname);
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/bar'));
 
 // app.get('/bar', function(req, res){  
  // res.send('hello world');

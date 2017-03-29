@@ -5,8 +5,11 @@ console.log(__dirname);
 
 app.use(express.static(__dirname + '/bar'));
 
-// app.get('/bar', function(req, res){  
- // res.send('hello world');
-//});
+app.get('*', function(req, res){  
+
+ console.log(req);
+ 
+ res.send('hello world');
+});
 
 app.listen(8080);

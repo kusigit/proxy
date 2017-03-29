@@ -7,5 +7,7 @@ wss.on('connection', function connection(ws) {
     console.log('received: %s', message);
   });
  
+ setInterval(function() {
   ws.send('something');
+ }, 2000);
 });
